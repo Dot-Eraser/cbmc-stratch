@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>California Buddhist Meditation Center</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+
+  <style>
+    :root{
+      --brand: #125e5e;   /* calm teal */
+      --accent: #f3eee6;  /* warm paper */
+    }
+    .brand-bg { background-color: var(--brand) !important; }
+    .brand-text { color: var(--brand) !important; }
+    .accent-bg { background-color: var(--accent) !important; }
+  </style>
+</head>
+<body class="bg-light">
+
+  <!-- Navbar (single row, collapses on mobile) -->
+  <nav class="navbar navbar-expand-lg navbar-dark brand-bg">
+    <div class="container">
+      <a class="navbar-brand fw-semibold" href="#">CBMC</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="nav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#programs">Programs</a></li>
+          <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="#visit">Visit</a></li>
+          <li class="nav-item ms-lg-2">
+            <a class="btn btn-outline-light btn-sm" href="#donate">Donate</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero (simple, swappable later) -->
+  <header class="py-5 accent-bg">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7">
+          <h1 class="display-5 fw-semibold brand-text">Welcome to CBMC</h1>
+          <p class="lead mb-4">
+            Meditation, community, and teachings in California. Sundays 11:00 AM PT.
+          </p>
+          <div class="d-flex gap-2">
+            <a href="#programs" class="btn btn-dark">View Programs</a>
+            <a href="#events" class="btn btn-outline-dark">This Week</a>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="ratio ratio-16x9 bg-white rounded-3 shadow-sm d-flex align-items-center justify-content-center">
+            <span class="text-muted">Video/Photo placeholder</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Minimal sections to start iterating -->
+  <section id="programs" class="py-5">
+    <div class="container">
+      <h2 class="h3 mb-4">Meditation Programs</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="p-4 bg-white rounded-3 shadow-sm">
+            <h3 class="h5 mb-1">Sunday Service</h3>
+            <p class="mb-2 small text-body-secondary">11:00 AM – 12:00 PM • In‑person</p>
+            <p class="mb-0">Guided meditation + Dharma talk. Open to all levels.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="p-4 bg-white rounded-3 shadow-sm">
+            <h3 class="h5 mb-1">Intro to Meditation</h3>
+            <p class="mb-2 small text-body-secondary">Weds 7:00 PM • Donation‑based</p>
+            <p class="mb-0">Breath, posture, and loving‑kindness practice.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="events" class="py-5 accent-bg">
+    <div class="container">
+      <h2 class="h3 mb-4">Upcoming Events</h2>
+      <ul class="list-group">
+        <li class="list-group-item d-flex justify-content-between">
+          <span>Vesak Celebration</span><span class="text-muted">May 18</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between">
+          <span>Community Chanting Night</span><span class="text-muted">1st Friday</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="visit" class="py-5">
+    <div class="container">
+      <h2 class="h3 mb-3">Visit Us</h2>
+      <p class="mb-1">928 S. New Hampshire Ave, Los Angeles, CA</p>
+      <p class="text-body-secondary">Parking info • Accessibility • Contact</p>
+    </div>
+  </section>
+
+  <footer class="py-4 brand-bg text-white">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <small>&copy; <span id="year"></span> California Buddhist Meditation Center</small>
+      <a class="btn btn-outline-light btn-sm mt-2 mt-md-0" id="donate" href="#">Donate</a>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear()</script>
+</body>
+</html>
